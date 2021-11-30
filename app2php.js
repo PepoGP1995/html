@@ -4,7 +4,7 @@ const boton=document.querySelector('.boton')
 const disp=document.querySelector('.display');
 
 boton.onclick = () => {
-    let suma=parseFloat(num1.value) +parseFloat(num2.value); 
+    let suma=parseFloat(num1.textContent) +parseFloat(num2.textContent); 
     console.log(suma);
     disp.innerHTML=suma;
 }
