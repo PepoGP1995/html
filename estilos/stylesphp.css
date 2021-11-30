@@ -13,3 +13,9 @@ body{
     color:rgba(241,239,239,0.9);
 
 } 
+.EstiloTabla{
+    background-color: cadetblue;
+    border-style: solid;
+    text-align: center;
+    font-size: 25px;
+}
