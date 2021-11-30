@@ -19,18 +19,9 @@
     <div class="Container">
         <h1>Laboratorio 1</h1>
         <div class="Datos">
-            <p class="Numero1">
-                <?php
-                echo $variable1;
-                ?>
-            </p>
-            <p class="Numero2">
-                <?php
-                echo $variable2;
-                ?>
-            </p>
+            <input type="text" class="Numero1" value=<?php echo $variable1; ?>>
+            <input type="text" class="Numero1" value=<?php echo $variable2; ?>>
             <button type="submit" class="boton">Enviar</button>
-
         </div>
         <div class="Resultado">
             <br>
