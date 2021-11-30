@@ -11,7 +11,7 @@
 <?php
     $variable1=2;    
     $variable2=3; 
-    $variable3=7; 
+    $variable3='hola'; 
 
 ?>
 <table style="border: 1px solid black;" class="EstiloTabla">
@@ -22,19 +22,21 @@
 </tr>
 <tr>
     <td>
-    <?php
-    echo $variable1;
-    ?>
+        <?php
+            echo $variable1;
+        ?>
     </td>
     <td>
-    <?php
-    echo $variable2;
-    ?>
+        <?php
+            echo $variable2;
+        ?>
     </td>
     <td>
-    <?php
-    echo $variable3;
-    ?>
+
+        <?php
+         echo $variable3;
+        ?>
+    
     </td>
 </tr>
 </table>
