@@ -14,7 +14,7 @@
     $variable3=7; 
 
 ?>
-<table style="border: 1px solid black;">
+<table style="border: 1px solid black;" class="EstiloTabla">
 <tr>
     <th>variable1</th>
     <th>variable2</th>
