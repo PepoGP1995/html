@@ -35,7 +35,11 @@
         <div class="Resultado">
             <br>
             <h1>Resultado</h1>
-            <p class="display">0.0</p>
+            <p class="display">
+                <?php
+                echo 0.0;
+                ?>
+            </p>
         </div>
     </div>
     <script src="app2php.js"></script>
