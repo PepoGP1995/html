@@ -20,7 +20,7 @@
         <h1>Laboratorio 1</h1>
         <div class="Datos">
             <input type="text" class="Numero1" value=<?php echo $variable1; ?>>
-            <input type="text" class="Numero1" value=<?php echo $variable2; ?>>
+            <input type="text" class="Numero2" value=<?php echo $variable2; ?>>
             <button type="submit" class="boton">Enviar</button>
         </div>
         <div class="Resultado">
