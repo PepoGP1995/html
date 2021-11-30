@@ -5,5 +5,5 @@ const disp=document.querySelector('.display');
 
 boton.onclick = () => {
     let suma=parseFloat(num1.value) +parseFloat(num2.value); 
-    disp.innerHTML=suma;
+    disp.innerHTML= <?php suma?>;
 }
