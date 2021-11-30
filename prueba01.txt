@@ -1,3 +1,0 @@
-Hola esta es una evaluación con GIT
-Segunda Prueba modificar el archivo
-Esto esta añadido en la rama de evaluación

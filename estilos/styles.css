@@ -1,0 +1,72 @@
+*,::after,*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 62.5%;
+
+}
+body{
+    background-color: rgba(0,0,0,0.8);
+    color:rgba(241,239,239,0.9);
+
+}
+.Container {
+
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+    /*background-color: chartreuse;*/
+
+}
+.Container h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size:2.3rem;
+
+}
+.Datos{
+
+    display: block; 
+    width: 50%;
+    margin: 1 rem auto;
+    display:flex;
+    flex-direction:column;
+
+}
+.Datos input {
+    margin:1rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color:white;
+}
+.Datos input:active{
+    border-bottom: 1px solid dodgerblue;
+}
+.Datos input:focus{
+    border-bottom: 1px solid dodgerblue;
+}
+.Datos button{
+    margin:2rem 2rem;
+    background-color:dodgerblue;
+    border:0;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color:white;
+}
+.Resultado p{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem; /*1rem 15 px*/
+    font-size:100px;
+    border: solid 2px dodgerblue;
+}
+
+
