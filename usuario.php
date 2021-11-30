@@ -11,7 +11,7 @@
 <?php
     $variable1=2;    
     $variable2=3; 
-    $variable2=7; 
+    $variable3=7; 
 
 ?>
 <table style="border: 1px solid black;">
