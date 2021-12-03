@@ -7,6 +7,7 @@
     }else{
         echo "Variable 2 es Mayor que la Variable 1";
     }
+    echo "<br>";
     $variableOpcion=1;
     switch($variableOpcion){
         case 0:
@@ -19,11 +20,15 @@
             echo "Se a pulsado otra tecla";
             break;
     }
-
+    echo "<br>";
     $i=0;
 
     while($i<10){
         echo "El valor de i ". $i . "<br>";
         $i++; 
+    }
+
+    for($j=0;$j<5;$j++){
+        echo "El valor de j ". $j . "<br>";
     }
 ?>                           
