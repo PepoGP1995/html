@@ -63,9 +63,9 @@
 
     }
 
-$objeto= new Carro1 ("verde", "2005"," VW POLO");
+$objeto= new Carro1 ("verde","2005","vw");
 #$objeto= new Carro1 ($_GET['color'],$_GET['anio'],$_GET['marca']);
-#$objeto= new Carro1 ($_POST['color'],$_POST['anio'],$_POST['marca']);
+#$objeto= new Carro1 ($_POST['color'],$_POST['ano'],$_POST['marca']);
 echo $objeto ->get_color();
 
 ?>                           
