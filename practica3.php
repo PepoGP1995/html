@@ -31,4 +31,11 @@
     for($j=0;$j<5;$j++){
         echo "El valor de j ". $j . "<br>";
     }
+
+    $array = array(1, 2, 3, 4);
+    foreach ($array as &$valor) {
+        $valor = $valor * 2;
+        echo $valor;
+    }
+
 ?>                           
