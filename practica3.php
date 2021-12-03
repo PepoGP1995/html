@@ -63,7 +63,8 @@
 
     }
 
-$objeto= new Carro1 ("verde", "2005"," VW POLO");
+#$objeto= new Carro1 ("verde", "2005"," VW POLO");
+$objeto= new Carro1 ($_GET['color'],$_GET['ano'],$_GET['marca']);
 echo $objeto ->get_color();
 
 ?>                           
