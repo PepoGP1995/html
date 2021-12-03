@@ -14,7 +14,7 @@
             <input type="text" name="color" />
         </p>
         <p>Año:
-            <input type="text" name="ano" />
+            <input type="text" name="anio" />
         </p>
         <p>Marca:
             <input type="text" name="marca" />

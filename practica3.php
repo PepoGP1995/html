@@ -52,9 +52,9 @@
         public $anio;
         public $marca; 
         
-        function __construc($color, $ano, $marca){
+        function __construc($color, $anio, $marca){
             $this->color=$color;
-            $this->ano=$ano;
+            $this->anio=$anio;
             $this->marca=$marca;
         }
         function get_color(){
@@ -63,9 +63,9 @@
 
     }
 
-#$objeto= new Carro1 ("verde", "2005"," VW POLO");
-#$objeto= new Carro1 ($_GET['color'],$_GET['ano'],$_GET['marca']);
-$objeto= new Carro1 ($_POST['color'],$_POST['ano'],$_POST['marca']);
+$objeto= new Carro1 ("verde", "2005"," VW POLO");
+#$objeto= new Carro1 ($_GET['color'],$_GET['anio'],$_GET['marca']);
+#$objeto= new Carro1 ($_POST['color'],$_POST['anio'],$_POST['marca']);
 echo $objeto ->get_color();
 
 ?>                           
