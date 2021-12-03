@@ -47,14 +47,14 @@
     echo "La Media Aritmetica es " .media_aritmetica(10,8);
     echo "<br>";
 
-    class Carro{
+    class Carro1{
         public $color;
-        public $año;
+        public $ano;
         public $marca; 
         
-        function __BobElConstructor($color, $año, $marca){
+        function __BobElConstructor($color, $ano, $marca){
             $this->color=$color;
-            $this->año=$año;
+            $this->ano=$ano;
             $this->marca=$marca;
         }
         function get_color(){
@@ -63,7 +63,7 @@
 
     }
 
-$objeto= new Carro ("Verde", "2005"," VW POLO");
+$objeto= new Carro1 ("verde", "2005"," VW POLO");
 echo $objeto ->get_color();
 
 ?>                           
