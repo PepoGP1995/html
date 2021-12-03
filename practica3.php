@@ -41,8 +41,29 @@
     echo "<br>";
     function media_aritmetica($a,$b){
         $media=($a+$b)/2;
-        return $media;
+        return $media; 
     }
 
     echo "La Media Aritmetica es " .media_aritmetica(10,8);
+    echo "<br>";
+
+    class Carro{
+        public $color;
+        public $año;
+        public $marca; 
+        
+        function __BobElConstructor($color, $año, $marca){
+            $this->color=$color;
+            $this->año=$año;
+            $this->marca=$marca;
+        }
+        function get_color(){
+            echo $this->color;
+        }
+
+    }
+
+$objeto= new Carro ("Verde", "2005"," VW POLO");
+echo $objeto ->get_color();
+
 ?>                           
