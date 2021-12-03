@@ -60,13 +60,23 @@
         function get_color(){
             echo $this->color;
         }
+        function get_anio(){
+            echo $this->anio;
+        }
+        function get_marca(){
+            echo $this->marca;
+        }
 
     }
 
     $objeto= new Carro1 ("verde","2005","vw");
     #$objeto= new Carro1 ($_GET['color'],$_GET['anio'],$_GET['marca']);
     #$objeto= new Carro1 ($_POST['color'],$_POST['ano'],$_POST['marca']);
-
+    echo "<br>";
     echo $objeto ->get_color();
-
+    echo "<br>";
+    echo $objeto ->get_anio();
+    echo "<br>";
+    echo $objeto ->get_marca();    
+    echo "<br>";
 ?>                           
