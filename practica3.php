@@ -31,11 +31,18 @@
     for($j=0;$j<5;$j++){
         echo "El valor de j ". $j . "<br>";
     }
-
+    echo "<br>";
     $array = array(1, 2, 3, 4);
     foreach ($array as &$valor) {
         $valor = $valor * 2;
         echo $valor;
+        echo "<br>";
+    }
+    echo "<br>";
+    function media_aritmetica($a,$b){
+        $media=($a+$b)/2;
+        return $media;
     }
 
+    echo "La Media Aritmetica es " .media_aritmetica(10,8);
 ?>                           
