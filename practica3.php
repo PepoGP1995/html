@@ -52,7 +52,7 @@
         public $anio;
         public $marca; 
         
-        function __construc($color, $anio, $marca){
+        function __construct($color, $anio, $marca){
             $this->color=$color;
             $this->anio=$anio;
             $this->marca=$marca;
@@ -68,5 +68,5 @@
     #$objeto= new Carro1 ($_POST['color'],$_POST['ano'],$_POST['marca']);
 
     echo $objeto ->get_color();
-    echo "putito";
+
 ?>                           
