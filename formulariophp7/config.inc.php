@@ -9,7 +9,7 @@
 	define( "MYSQL_HOST", "localhost" );
 	define( "MYSQL_USER", "comunicaciones" );
 	define( "MYSQL_PASSWD", "comunicaciones" );
-	define( "MYSQL_DBNAME", "Informacion" );
+	define( "MYSQL_DBNAME", "sensores" );
 	define( "MYSQL_DEBUG", "false" );
 	
 	define( "TMPDIR", DIR_RAIZ . "/tmp" );

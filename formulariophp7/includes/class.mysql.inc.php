@@ -95,7 +95,7 @@
 		
 		
 		
-	function insertar($t,$p,$h,$f)
+	/*function insertar($t,$p,$h,$f)
 		{
 		 $bd = new class_mysql();
 		$sql = "INSERT INTO valores (id, Temperatura, Presion, Humedad,Fecha) VALUES (NULL, '".$t."', '".$p."', '".$h."'".$f."')";
@@ -107,12 +107,17 @@
 		 $bd = new class_mysql();
 		$sql = "INSERT INTO almacenes (id, Tienda, Ventas,Fecha) VALUES (NULL, '".$t."', '".$p."', '".$f."')";
 			return $bd->query( $sql );
-		}	
-		
+		}	*/
+		function insertar($t,$h,$f)
+		{
+		 $bd = new class_mysql();
+		$sql = "INSERT INTO tabla_sensores (id, temperatura, humedad, fecha) VALUES (NULL, '".$t."', '".$h."'".$f."')";
+			return $bd->query( $sql );
+		}
 		function listar( ) 
 		{
 		 $bd = new class_mysql();
-		$sql = "SELECT  * FROM almacenes";
+		$sql = "SELECT  * FROM tabla_sensores";
 		return $bd->query( $sql );
 		}
 		
