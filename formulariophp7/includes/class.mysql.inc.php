@@ -35,7 +35,7 @@
 			$connection = new  mysqli( $this->MySQL_host, $this->MySQL_user, $this->MySQL_passwd, $this->MySQL_dbname);
 			
 			// handles the possible error in connection
-			if ( !connection)
+			if ( !$connection)
 			{
 				// sends an error message on FALSE connection
 				$error_msg = "<center><h2>FALLO AL CONECTAR A LA BASE DE DATOS.<BR>informe al administrador del sitio<br>";
