@@ -15,12 +15,12 @@
 	define( "TMPDIR", DIR_RAIZ . "/tmp" );
 	session_save_path( TMPDIR );
 
-	echo $_SERVER['DOCUMENT_ROOT']."<br>";
+	/*echo $_SERVER['DOCUMENT_ROOT']."<br>";
 	echo DIR_RAIZ."<br>";
 	echo TMPDIR."<br>";
 	echo HOST."<br>";
 	echo DIR_INC."<br>";
 	echo DIR_IMG."<br>";
-	echo MYSQL_HOST;
+	echo MYSQL_HOST;*/
 
 ?>
