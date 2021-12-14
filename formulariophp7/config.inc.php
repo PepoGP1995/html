@@ -1,6 +1,6 @@
 <?php
 
-	define( "DIR_RAIZ", $_SERVER['DOCUMENT_ROOT'] );
+	define( "DIR_RAIZ", $_SERVER['DOCUMENT_ROOT']."/formulariophp7" );
 	define( "DIR_INC", DIR_RAIZ . "/includes/" );
 	
 	define( "HOST", "http://" . $_SERVER['HTTP_HOST'] );
