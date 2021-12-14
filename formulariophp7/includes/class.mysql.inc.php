@@ -111,7 +111,7 @@
 		function insertar($t,$h,$f)
 		{
 		 $bd = new class_mysql();
-		$sql = "INSERT INTO tabla_sensores (id, temperatura, humedad, fecha) VALUES (NULL, '".$t."', '".$h."'".$f."')";
+		$sql = "INSERT INTO tabla_sensores (id, temperatura, humedad, fecha) VALUES (NULL, '".$t."', '".$h."', '".$f."')";
 			return $bd->query( $sql );
 		}
 		function listar( ) 
