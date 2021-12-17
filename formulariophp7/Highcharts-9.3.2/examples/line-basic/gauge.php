@@ -186,7 +186,7 @@ var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptio
             format:
                 '<div style="text-align:center">' +
                 '<span style="font-size:25px">{y}</span><br/>' +
-                '<span style="font-size:12px;opacity:0.4">km/h</span>' +
+                '<span style="font-size:12px;opacity:0.4">ºC</span>' +
                 '</div>'
         },
         tooltip: {
@@ -200,7 +200,7 @@ var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptio
 var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, {
     yAxis: {
         min: 0,
-        max: 5,
+        max: 100,
         title: {
             text: 'Humedad'
         }
@@ -224,7 +224,7 @@ var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, 
                 '<div style="text-align:center">' +
                 '<span style="font-size:25px">{y:.1f}</span><br/>' +
                 '<span style="font-size:12px;opacity:0.4">' +
-                '* 1000 / min' +
+                '* % ' +
                 '</span>' +
                 '</div>'
         },
