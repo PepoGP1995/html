@@ -122,7 +122,7 @@ Highcharts.chart('container', {
     },
    series: [{
         name: 'Installation',
-        data: [<?php echo $fila[0]; ?>, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+        data: [<?php echo $fila[0]; ?>, <?php echo $fila[1]; ?>, <?php echo $fila[2]; ?>, <?php echo $fila[3]; ?>, <?php echo $fila[4]; ?>]
     }],
 
     responsive: {
