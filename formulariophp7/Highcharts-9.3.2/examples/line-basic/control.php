@@ -1,6 +1,6 @@
 <?php
 
-include_once( $_SERVER['DOCUMENT_ROOT'] . "/line-basic/config.inc.php" );
+include_once( $_SERVER['DOCUMENT_ROOT'] . "/formulariophp7/Highcharts-9.3.2/examples/line-basic/config.inc.php" );
 include_once(DIR_INC . "class.mysql.inc.php");
 $bd = new class_mysql();
 $bd->insertar($_GET['temperatura'] , $_GET['humedad'], $_GET['fecha']);
