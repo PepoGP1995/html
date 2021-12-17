@@ -76,8 +76,6 @@ $bd = new class_mysql();
 $result=$bd->listar1();
 
 ?>
-<?php
-while($fila= mysqli_fetch_array($result))?>
 
 
 
@@ -120,7 +118,10 @@ Highcharts.chart('container', {
     },
    series: [{
         name: 'Installation',
-        data: [<?php echo $fila[0]; ?>, <?php echo $fila[1]; ?>, <?php echo $fila[2]; ?>, <?php echo $fila[3]; ?>, <?php echo $fila[4]; ?>]
+        <?php
+        while($fila= mysqli_fetch_array($result)){?>
+        data: [<?php echo $fila['temperatura']; ?>]
+        <?php } ?>
     }],
 
     responsive: {
