@@ -111,11 +111,11 @@ Highcharts.chart('container', {
             label: {
                 connectorAllowed: false
             },
-            pointStart: 2010
+            pointStart: 1
         }
     },
    series: [{
-        name: 'Installation',
+        name: 'Temperatura',
 
         data: [
 
