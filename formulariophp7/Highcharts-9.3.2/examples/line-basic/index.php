@@ -61,11 +61,6 @@
 
 <figure class="highcharts-figure">
     <div id="container"></div>
-    <p class="highcharts-description">
-        Basic line chart showing trends in a dataset. This chart includes the
-        <code>series-label</code> module, which adds a label to each line for
-        enhanced readability.
-    </p>
 </figure>
 <?php
 
@@ -81,16 +76,16 @@ $result=$bd->listar1();
 Highcharts.chart('container', {
 
     title: {
-        text: 'Solar Employment Growth by Sector, 2010-2016'
+        text: 'Comunicaciones Avanzadas'
     },
 
     subtitle: {
-        text: 'Source: thesolarfoundation.com'
+        text: 'Base de datos Sensores'
     },
 
     yAxis: {
         title: {
-            text: 'Number of Employees'
+            text: 'Rango 0 - 100'
         }
     },
 
