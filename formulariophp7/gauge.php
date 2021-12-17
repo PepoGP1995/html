@@ -73,12 +73,12 @@
 <h1>Comunicaciones Avanzadas </h1>
 <h2>Base de datos Sensores En Gauge</h2>
 <br>
-<script src="/code/highcharts.js"></script>
-<script src="/code/highcharts-more.js"></script>
-<script src="/code/modules/solid-gauge.js"></script>
-<script src="/code/modules/exporting.js"></script>
-<script src="/code/modules/export-data.js"></script>
-<script src="/code/modules/accessibility.js"></script>
+<script src="code/highcharts.js"></script>
+<script src="code/highcharts-more.js"></script>
+<script src="code/modules/solid-gauge.js"></script>
+<script src="code/modules/exporting.js"></script>
+<script src="code/modules/export-data.js"></script>
+<script src="code/modules/accessibility.js"></script>
 
 <figure class="highcharts-figure">
     <div id="container-speed" class="chart-container"></div>
