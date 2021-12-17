@@ -1,10 +1,10 @@
 <?php
 
-	define( "DIR_RAIZ", $_SERVER['DOCUMENT_ROOT']."/formulariophp7" );
+	define( "DIR_RAIZ", $_SERVER['DOCUMENT_ROOT']."/line-basic" );
 	define( "DIR_INC", DIR_RAIZ . "/includes/" );
 	
 	define( "HOST", "http://" . $_SERVER['HTTP_HOST'] );
-	define( "DIR_IMG", HOST . "/formulariophp7/images/" );
+	define( "DIR_IMG", HOST . "/line-basic/images/" );
 
 	define( "MYSQL_HOST", "localhost" );
 	define( "MYSQL_USER", "comunicaciones" );
