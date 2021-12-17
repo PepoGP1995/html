@@ -79,7 +79,7 @@ $result=$bd->listar1();
 <?php
 $fila= mysqli_fetch_array($result);
 ?>
-<?php echo $fila[0]; ?>
+<?php echo $fila[4]; ?>
 
 		<script type="text/javascript">
 Highcharts.chart('container', {
