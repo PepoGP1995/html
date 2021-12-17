@@ -122,7 +122,7 @@ Highcharts.chart('container', {
     },
    series: [{
         name: 'Installation',
-        data: [<?php echo $result; ?>, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+        data: [545456, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }],
 
     responsive: {
@@ -142,6 +142,6 @@ Highcharts.chart('container', {
 
 });
 		</script>
-
+<?php echo $result; ?>
 	</body>
 </html>
