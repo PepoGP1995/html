@@ -53,9 +53,9 @@ while($fila= mysqli_fetch_array($result)){?>
 </head>
 <body>
     <br>
-<button onclick="location.href='lineal.php'">Grafica Lineal</button>
+<button onclick="location.href='lineal.php'" target="_blank">Grafica Lineal</button>
 <br>
-<button onclick="location.href='gauge.php'">Grafica Gauge</button>
+<button onclick="location.href='gauge.php'" target="_blank">Grafica Gauge</button>
 </body>
 </html>
 
