@@ -67,8 +67,6 @@
         enhanced readability.
     </p>
 </figure>
-
-
 <?php
 
 include_once( $_SERVER['DOCUMENT_ROOT'] . "/formulariophp7/Highcharts-9.3.2/examples/line-basic/config.inc.php" );
@@ -78,6 +76,9 @@ $bd = new class_mysql();
 $result=$bd->listar1();
 
 ?>
+<p>  Resultado <?php echo $result; ?> </p>  
+
+
 
 
 		<script type="text/javascript">
@@ -139,6 +140,6 @@ Highcharts.chart('container', {
 
 });
 		</script>
-     <p>  Resultado <?php echo $result; ?> </p>  
+     
 	</body>
 </html>
