@@ -53,18 +53,18 @@
 		</style>
 	</head>
 	<body>
-<script src="../../code/highcharts.js"></script>
-<script src="../../code/modules/series-label.js"></script>
-<script src="../../code/modules/exporting.js"></script>
-<script src="../../code/modules/export-data.js"></script>
-<script src="../../code/modules/accessibility.js"></script>
+<script src="/code/highcharts.js"></script>
+<script src="/code/modules/series-label.js"></script>
+<script src="/code/modules/exporting.js"></script>
+<script src="/code/modules/export-data.js"></script>
+<script src="/code/modules/accessibility.js"></script>
 
 <figure class="highcharts-figure">
     <div id="container"></div>
 </figure>
 <?php
 
-include_once( $_SERVER['DOCUMENT_ROOT'] . "/formulariophp7/Highcharts-9.3.2/examples/line-basic/config.inc.php" );
+include_once( $_SERVER['DOCUMENT_ROOT'] . "/formulariophp7/config.inc.php" );
 include_once(DIR_INC . "class.mysql.inc.php");
 $bd = new class_mysql();
 
