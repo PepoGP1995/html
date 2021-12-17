@@ -139,6 +139,6 @@ Highcharts.chart('container', {
 
 });
 		</script>
-        <?php echo $result; ?>
+     <p> <?php echo $result; ?> </p>  
 	</body>
 </html>
