@@ -89,7 +89,15 @@
     </p>
 </figure>
 
+<?php
 
+include_once( $_SERVER['DOCUMENT_ROOT'] . "/formulariophp7/Highcharts-9.3.2/examples/line-basic/config.inc.php" );
+include_once(DIR_INC . "class.mysql.inc.php");
+$bd = new class_mysql();
+
+$result=$bd->listar3();
+$result1=$bd->listar4();
+?>
 		<script type="text/javascript">
 var gaugeOptions = {
     chart: {
@@ -156,7 +164,7 @@ var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptio
         min: 0,
         max: 200,
         title: {
-            text: 'Speed'
+            text: 'Temperatura'
         }
     },
 
@@ -165,8 +173,15 @@ var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptio
     },
 
     series: [{
-        name: 'Speed',
-        data: [80],
+        name: 'Temperatura',
+        data: [
+            <?php
+                while($fila= mysqli_fetch_array($result)){
+                    echo "[".$fila["temperatura"]."]";
+                }
+            ?>
+
+        ],
         dataLabels: {
             format:
                 '<div style="text-align:center">' +
@@ -175,7 +190,7 @@ var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptio
                 '</div>'
         },
         tooltip: {
-            valueSuffix: ' km/h'
+            valueSuffix: ' ºC'
         }
     }]
 
@@ -187,13 +202,23 @@ var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, 
         min: 0,
         max: 5,
         title: {
-            text: 'RPM'
+            text: 'Humedad'
         }
     },
 
     series: [{
-        name: 'RPM',
-        data: [1],
+        name: 'Humedad',
+        data: [
+
+
+            <?php
+                while($fila= mysqli_fetch_array($result1)){
+                    echo "[".$fila["humedad"]."]";
+                }
+            ?>
+
+        
+        ],
         dataLabels: {
             format:
                 '<div style="text-align:center">' +
@@ -204,7 +229,7 @@ var chartRpm = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, 
                 '</div>'
         },
         tooltip: {
-            valueSuffix: ' revolutions/min'
+            valueSuffix: ' % '
         }
     }]
 
