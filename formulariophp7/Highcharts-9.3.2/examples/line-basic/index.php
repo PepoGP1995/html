@@ -77,9 +77,7 @@ $result=$bd->listar1();
 
 ?>
 <?php
-$fila= mysqli_fetch_array($result)?>
-
-
+while($fila= mysqli_fetch_array($result))?>
 
 
 
