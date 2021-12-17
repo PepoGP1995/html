@@ -78,7 +78,7 @@ $bd->insertar($_GET['temperatura'] , $_GET['humedad'], $_GET['fecha']);
 
 
 
-$result=$bd->listar();
+$result=$bd->listar1();
 
 ?>
 
