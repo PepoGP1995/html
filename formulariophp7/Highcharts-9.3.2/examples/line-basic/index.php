@@ -77,7 +77,7 @@ $result=$bd->listar1();
 
 ?>
 <?php
-while($fila= mysqli_fetch_array($result))?>
+$fila= mysqli_fetch_array($result)?>
 
 
 
@@ -122,7 +122,7 @@ Highcharts.chart('container', {
     },
    series: [{
         name: 'Installation',
-        data: [<?php echo $fila['temperatura']; ?>]
+        data: [<?php echo $fila[0]; ?>, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }],
 
     responsive: {
