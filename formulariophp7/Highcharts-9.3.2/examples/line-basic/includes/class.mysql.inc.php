@@ -124,13 +124,13 @@
 		function listar1( ) 
 		{
 		 $bd = new class_mysql();
-		$sql = "SELECT  temperatura FROM tabla_sensores";
+		$sql = "SELECT temperatura FROM tabla_sensores";
 		return $bd->query( $sql );
 		}
 		function listar2( ) 
 		{
 		 $bd = new class_mysql();
-		$sql = "SELECT  humedad FROM tabla_sensores";
+		$sql = "SELECT humedad FROM tabla_sensores";
 		return $bd->query( $sql );
 		}
 	} // closes the class definition

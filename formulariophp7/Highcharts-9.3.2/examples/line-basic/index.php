@@ -126,7 +126,7 @@ Highcharts.chart('container', {
         data: [
             <?php
                 while($fila= mysqli_fetch_array($result1)){
-                    echo "[".$fila["temperatura"]."],";
+                    echo "[".$fila["humedad"]."],";
                 }
             ?>
         ]
