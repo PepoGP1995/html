@@ -121,6 +121,11 @@
 		return $bd->query( $sql );
 		}
 		
-		
+		function listar1( ) 
+		{
+		 $bd = new class_mysql();
+		$sql = "SELECT  temperatura FROM tabla_sensores ORDER BY id DESC LIMIT 1";
+		return $bd->query( $sql );
+		}
 	} // closes the class definition
 ?>
