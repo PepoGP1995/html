@@ -70,6 +70,9 @@
 		</style>
 	</head>
 	<body>
+<h1>Comunicaciones Avanzadas </h1>
+<h2>Base de datos Sensores En Gauge</h2>
+<br>
 <script src="../../code/highcharts.js"></script>
 <script src="../../code/highcharts-more.js"></script>
 <script src="../../code/modules/solid-gauge.js"></script>
@@ -81,11 +84,7 @@
     <div id="container-speed" class="chart-container"></div>
     <div id="container-rpm" class="chart-container"></div>
     <p class="highcharts-description">
-        Chart demonstrating solid gauges with dynamic data. Two separate charts
-        are used, and each is updated dynamically every few seconds. Solid
-        gauges are popular charts for dashboards, as they visualize a number
-        in a range at a glance. As demonstrated by these charts, the color of
-        the gauge can change depending on the value of the data shown.
+
     </p>
 </figure>
 
@@ -99,6 +98,7 @@ $result=$bd->listar3();
 $result1=$bd->listar4();
 ?>
 		<script type="text/javascript">
+            
 var gaugeOptions = {
     chart: {
         type: 'solidgauge'

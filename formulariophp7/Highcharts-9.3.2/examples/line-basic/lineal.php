@@ -80,7 +80,7 @@ Highcharts.chart('container', {
     },
 
     subtitle: {
-        text: 'Base de datos Sensores'
+        text: 'Base de datos Sensores En Lineal'
     },
 
     yAxis: {
