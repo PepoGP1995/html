@@ -69,7 +69,7 @@ include_once(DIR_INC . "class.mysql.inc.php");
 $bd = new class_mysql();
 
 $result=$bd->listar1();
-
+$result1=$bd->listar2();
 ?>
 
 		<script type="text/javascript">
@@ -85,7 +85,7 @@ Highcharts.chart('container', {
 
     yAxis: {
         title: {
-            text: 'Rango 0 - 100'
+            text: 'Rango Maximo'
         }
     },
 
@@ -121,6 +121,15 @@ Highcharts.chart('container', {
             ?>
         ]
 
+    }, {
+        name: 'Humedad',
+        data: [
+            <?php
+                while($fila= mysqli_fetch_array($result1)){
+                    echo "[".$fila["temperatura"]."],";
+                }
+            ?>
+        ]
     }],
 
     responsive: {
