@@ -76,8 +76,10 @@ $bd = new class_mysql();
 $result=$bd->listar1();
 
 ?>
-<p>  Resultado <?php echo $result; ?> </p>  
+<?php
+$fila= mysqli_fetch_array($result)?>
 
+<?php echo $fila['temperatura']; ?>
 
 
 
