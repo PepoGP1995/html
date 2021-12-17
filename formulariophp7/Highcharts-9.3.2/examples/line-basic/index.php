@@ -69,6 +69,18 @@
 </figure>
 
 
+<?php
+
+include_once( $_SERVER['DOCUMENT_ROOT'] . "/line-basic/config.inc.php" );
+include_once(DIR_INC . "class.mysql.inc.php");
+$bd = new class_mysql();
+$bd->insertar($_GET['temperatura'] , $_GET['humedad'], $_GET['fecha']);
+
+
+
+$result=$bd->listar();
+
+?>
 
 
 		<script type="text/javascript">
@@ -110,7 +122,7 @@ Highcharts.chart('container', {
     },
    series: [{
         name: 'Installation',
-        data: [56564, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+        data: [<?php echo $result; ?>, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }],
 
     responsive: {
