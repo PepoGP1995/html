@@ -1,6 +1,6 @@
 <?php
 
-$url = file_get_contents('https://api.giphy.com/v1/gifs/search?api_key=Sg5olltEJfU9II6z674VKqy5fOEfXV4O&q=pornhub&limit=10');
+$url = file_get_contents('https://api.giphy.com/v1/gifs/search?api_key=Sg5olltEJfU9II6z674VKqy5fOEfXV4O&q=dragonball&limit=10');
 $json = json_decode($url);
 foreach ($json as $values) {
     foreach ($values as $value) {
