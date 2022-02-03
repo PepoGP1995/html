@@ -3,7 +3,7 @@ $dev_data = array('id'=>'-1','firstname'=>'Developer','lastname'=>'','username'=
 if(!defined('base_url')) define('base_url','http://192.168.1.109/qhapac.com/chatbot/');
 if(!defined('base_app')) define('base_app', str_replace('\\','/',__DIR__).'/' );
 if(!defined('dev_data')) define('dev_data',$dev_data);
-if(!defined('DB_SERVER')) define('DB_SERVER',"localhost");
+if(!defined('DB_SERVER')) define('DB_SERVER',"192.168.0.109");
 if(!defined('DB_USERNAME')) define('DB_USERNAME',"comunicaciones");
 if(!defined('DB_PASSWORD')) define('DB_PASSWORD',"comunicaciones");
 if(!defined('DB_NAME')) define('DB_NAME',"chatbot_db");
